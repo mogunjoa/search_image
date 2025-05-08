@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:image_search/presentation/ui/home/home_screen.dart';
+import 'package:image_search/image_search_app.dart';
 
 import 'core/AppBlocObserver.dart';
 
@@ -15,7 +15,7 @@ void main() {
 
   runZonedGuarded(() {
     runApp(
-      HomeScreen(),
+      ImageSearchApp(),
     );
   }, (error, stackTrace) {
     // 에러 핸들링
