@@ -3,7 +3,7 @@ import 'package:image_search/features/image_search/presentation/screen/search_sc
 
 abstract class ImageSearchRouter {
   static GoRoute route = GoRoute(
-    path: '/image-search',
+    path: '/search',
     builder: (context, state) => const SearchScreen(),
   );
 }
