@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:image_search/features/image_search/presentation/widgets/search_form.dart';
 
 class SearchScreen extends StatelessWidget {
   const SearchScreen({super.key});
@@ -19,7 +20,13 @@ class SearchScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-
+                SearchForm(
+                  padding: const EdgeInsets.all(16),
+                  onSearch: (String query) {
+                    // Handle search action
+                    print('Searching for: $query');
+                  },
+                )
               ],
             ),
           ),
@@ -28,3 +35,5 @@ class SearchScreen extends StatelessWidget {
     );
   }
 }
+
+
