@@ -7,13 +7,13 @@ import 'package:image_search/image_search_app.dart';
 import 'core/AppBlocObserver.dart';
 
 void main() {
-  // Flutter 엔진과 위젯 바인딩 초기화
-  WidgetsFlutterBinding.ensureInitialized();
-
-  // Bloc Observer 설정(상태 변화 로깅)
-  Bloc.observer = AppBlocObserver();
-
   runZonedGuarded(() {
+    // Flutter 엔진과 위젯 바인딩 초기화
+    WidgetsFlutterBinding.ensureInitialized();
+
+    // Bloc Observer 설정(상태 변화 로깅)
+    Bloc.observer = AppBlocObserver();
+
     runApp(
       ImageSearchApp(),
     );
